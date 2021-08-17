@@ -13,7 +13,7 @@ const handleSubmit = (event) => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ url })
+                body: JSON.stringify({ url: url })
             })
             .then((res) => {
                 return res.json()
@@ -27,4 +27,5 @@ const handleSubmit = (event) => {
     }
 };
 
+export { updateUI }
 export { handleSubmit }
