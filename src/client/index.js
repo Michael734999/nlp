@@ -5,8 +5,8 @@ import { updateUI } from './js/formHandler'
 import './styles/header.scss'
 import './styles/main.scss'
 
-const search = document.getElementById('submit');
-search.addEventListener('click', () => handleSubmit());
+// const search = document.getElementById('submit');
+// search.addEventListener('click', () => handleSubmit());
 
 export {
     checkName,

@@ -25,11 +25,12 @@ const handleSubmit = (event) => {
     } else {
         console.log('Error, invalid URL')
     }
+    const search = document.getElementById('submit');
+
+    search.addEventListener('click', handleSubmit);
 };
 
-// const search = document.getElementById('submit');
 
-// search.addEventListener('click', handleSubmit);
 
 export { handleSubmit }
 export { updateUI }
