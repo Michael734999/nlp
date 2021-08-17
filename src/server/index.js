@@ -41,10 +41,10 @@ app.get('/test', (req, res) => {
     res.send(mockAPIResponse);
 });
 
+const apiKey = process.env.API_KEY;
 // Create a POST route:
 app.post('/lang', async(req, res) => {
 
-    const apiKey = process.env.API_KEY;
     const url = req.body.url;
 
     const response = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&url=${url}&lang=en`, { method: 'POST' });
