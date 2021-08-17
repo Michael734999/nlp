@@ -1,4 +1,4 @@
-function updateUI(res) {
+const updateUI = (res) => {
     const agreement = document.getElementById('agreement');
     const subjectivity = document.getElementById('subjectivity');
     const confRank = document.getElementById('confidence');
