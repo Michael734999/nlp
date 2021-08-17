@@ -41,6 +41,19 @@ app.get('/test', (req, res) => {
     res.send(mockAPIResponse);
 });
 
-// Create a GET route:
-
 // Create a POST route:
+app.post('/lang', () => {
+
+    const apiKey = process.env.API_KEY;
+    const url = req.body.url;
+
+    const response = await fetch(``, { method: 'POST' });
+
+    try {
+        const data = await response.json();
+        console.log(data);
+        res.send(data);
+    } catch (error) {
+        console.log("error", error);
+    }
+});
