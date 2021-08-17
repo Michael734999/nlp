@@ -10,5 +10,3 @@ export {
     handleSubmit,
     updateUI
 }
-
-alert('Hey');
