@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 // Empty Object 
 let projectData = {};
 
