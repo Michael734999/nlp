@@ -11,6 +11,8 @@ const mockAPIResponse = require('./mockAPI.js')
 const express = require('express');
 const app = express();
 
+const fetch = require('node-fetch');
+
 // Create body parser 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -6,8 +6,8 @@ import './styles/main.scss'
 const btn = document.getElementById('submit');
 btn.addEventListener('click', () => handleSubmit());
 
-export {
-    checkName,
-    handleSubmit,
-    updateUI
-}
+// export {
+//     // checkName,
+//     handleSubmit,
+//     // updateUI
+// }
