@@ -27,9 +27,8 @@ function handleSubmit(e) {
     }
 };
 
-const search = document.getElementById('submit');
+// const search = document.getElementById('submit');
 
-search.addEventListener('click', handleSubmit);
+// search.addEventListener('click', handleSubmit);
 
 export { handleSubmit }
-export { updateUI }
