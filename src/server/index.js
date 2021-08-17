@@ -42,7 +42,7 @@ app.get('/test', (req, res) => {
 });
 
 // Create a POST route:
-app.post('/lang', () => {
+app.post('/lang', async(req, res) => {
 
     const apiKey = process.env.API_KEY;
     const url = req.body.url;
