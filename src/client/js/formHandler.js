@@ -1,5 +1,5 @@
 import { checkName } from "./nameChecker";
-import { updateUI } from "./updateUI"
+import { updateUI } from "./updateUI";
 
 const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,7 +13,7 @@ const handleSubmit = (event) => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ url: url })
+                body: JSON.stringify({ url })
             })
             .then((res) => {
                 return res.json()
