@@ -1,7 +1,7 @@
 import { checkName } from "./nameChecker";
 import { updateUI } from "./updateUI"
 
-function handleSubmit(event) {
+const handleSubmit = (event) => {
     event.preventDefault();
 
     let url = document.getElementById('name').value;
