@@ -1,0 +1,3 @@
+function updateUI() {}
+
+export { updateUI }
