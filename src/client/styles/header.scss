@@ -1,6 +1,25 @@
-@use 'main';
+$prime-color: #fff;
+$sec-color: #fdfda3;
+$third-color: #ad32;
+$fourth-color: #a23;
 nav {
-    ul {}
-    li {}
-    a {}
+    min-height: 12vh;
+}
+
+nav {
+    ul {
+        color: $fourth-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 2em;
+    }
+    li {
+        color: $fourth-color;
+        padding-right: 3em;
+    }
+    a {
+        text-decoration: none;
+    }
 }

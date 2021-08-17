@@ -14,26 +14,32 @@
     <nav>
         <ul>
             <a href="#">
-                <li>HOME</li>
+                <li id="home">HOME</li>
             </a>
             <a href="#">
                 <li>NAVIGATE</li>
             </a>
         </ul>
     </nav>
-    <header>
-        <h1>Natural Language Processing</h1>
-    </header>
 
     <main>
         <section>
-            <form class="" onsubmit="return handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter vaild URL">
-                <input type="submit" name="" value="search" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
-            </form>
+            <header>
+                <h1>Natural Language Processing:</h1>
+            </header>
+            <div class="formSub">
+                <div class="form">
+                    <form class="" onsubmit="return handleSubmit(event)">
+                        <label for="name">Enter a valid URL:</label><br>
+                        <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter vaild URL">
+                        <br>
+                        <input id="submit" type="submit" name="" value="search" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section id='res'>
             <h2>Results:</h2>
             <div id='results'></div>
         </section>

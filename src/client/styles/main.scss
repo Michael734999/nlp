@@ -1,10 +1,93 @@
+$prime-color: rgb(209, 209, 209);
+$sec-color: #fdfda3;
+$third-color: rgb(247, 247, 247);
+$fourth-color: #a23;
+$color-five: rgb(175, 174, 174);
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$prime-color: #fff;
-$sec-color: #fdfda3;
-$third-color: #ad32;
-$fourth-color: #a23;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(214, 214, 214);
+    background: linear-gradient(0deg, rgb(253, 253, 253) 0%, rgb(179, 179, 179) 100%);
+    background-repeat: no-repeat;
+}
+
+section {
+    position: relative;
+    min-height: 40vh;
+}
+
+header {
+    padding: 1.5em;
+    font-size: 1.25em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.formSub {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 1.25em;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 2.25em;
+    background-color: $third-color;
+    align-content: center;
+    text-align: center;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#name {
+    font-size: 0.9em;
+    padding: 0.4em;
+    border-radius: 8px;
+    border: none;
+    background-color: $prime-color;
+    margin: 1em;
+}
+
+#submit {
+    font-size: 0.8em;
+    border-radius: 18px;
+    text-transform: uppercase;
+    padding: 0.3em;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background-color: $color-five;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 0.75em;
+}
+
+#submit:hover {
+    background-color: $fourth-color;
+    color: $third-color;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#res {
+    background-color: $color-five;
+    min-height: 45vh;
+    padding: 1.5em;
+    margin-top: 3vh;
+}
