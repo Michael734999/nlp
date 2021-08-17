@@ -1,3 +1,6 @@
-function checkName(e) {}
+function checkName(url) {
+    const run = url.match(/^(http|https):\/\/[^ "]+$/);
+    return run.test(url);
+}
 
 export { checkName }
