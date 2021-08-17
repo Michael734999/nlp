@@ -1,8 +1,8 @@
 import { checkName } from "./nameChecker";
 import { updateUI } from "./updateUI"
 
-function handleSubmit(e) {
-    e.preventDefault();
+function handleSubmit(event) {
+    event.preventDefault();
 
     let url = document.getElementById('name').value;
 
@@ -16,7 +16,7 @@ function handleSubmit(e) {
                 body: JSON.stringify({ url: url })
             })
             .then((res) => {
-                res.json()
+                return res.json()
             })
             .then((res) => {
                 console.log(res);
@@ -32,3 +32,4 @@ function handleSubmit(e) {
 // search.addEventListener('click', handleSubmit);
 
 export { handleSubmit }
+export { updateUI }
