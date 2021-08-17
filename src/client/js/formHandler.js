@@ -7,7 +7,7 @@ function handleSubmit(e) {
     let url = document.getElementById('name').value;
 
     if (checkName(url)) {
-        fetch('', {
+        fetch('http://localhost:8081/process', {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {
