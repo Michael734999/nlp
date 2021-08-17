@@ -5,6 +5,9 @@ import { updateUI } from './js/updateUI'
 import './styles/header.scss'
 import './styles/main.scss'
 
+const search = document.getElementById('submit');
+search.addEventListener('click', () => handleSubmit());
+
 export {
     checkName,
     handleSubmit,
