@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-mudule.exports = {
+module.exports = {
     entry: '.src/client/index.js',
     output: {
         libraryTarget: 'var',
