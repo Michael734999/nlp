@@ -47,7 +47,7 @@ app.post('/lang', () => {
     const apiKey = process.env.API_KEY;
     const url = req.body.url;
 
-    const response = await fetch(``, { method: 'POST' });
+    const response = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&url=${url}&lang=en`, { method: 'POST' });
 
     try {
         const data = await response.json();
