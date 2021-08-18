@@ -1,5 +1,5 @@
 const checkName = (url) => {
-    const run = url.match(/^(http|https):\/\/[^ "]+$/);
+    const run = new RegExp(/^(http|https):\/\/[^ "]+$/);
     return run.test(url);
 }
 

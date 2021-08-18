@@ -6,18 +6,16 @@ const handleSubmit = (event) => {
 
     let url = document.getElementById('name').value;
 
-    if (checkName(url)) {
+    if (Client.checkName(url)) {
         fetch('http://localhost:8081/lang', {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ url: url })
+                body: JSON.stringify({ url })
             })
-            .then((res) => {
-                return res.json()
-            })
+            .then((res) => res.json())
             .then((res) => {
                 console.log(res);
                 updateUI(res);

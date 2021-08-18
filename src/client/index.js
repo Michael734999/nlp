@@ -11,7 +11,7 @@ export {
     updateUI
 }
 
-let btn = document.getElementById('submit');
-if (btn) {
-    btn.addEventListener('click', handleSubmit);
-};
+// let btn = document.getElementById('submit');
+// if (btn) {
+//     btn.addEventListener('click', handleSubmit);
+// };
