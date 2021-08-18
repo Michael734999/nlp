@@ -10,8 +10,3 @@ export {
     handleSubmit,
     updateUI
 }
-
-// let btn = document.getElementById('submit');
-// if (btn) {
-//     btn.addEventListener('click', handleSubmit);
-// };
